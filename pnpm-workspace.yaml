@@ -1,5 +1,5 @@
 packages:
-  - 'chefshot'
+  - 'tuttushot'
   - 'test-kitchen'
   - 'tuttu-agent'
   # You can add more workspace packages here later if needed
