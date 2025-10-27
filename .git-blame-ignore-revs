@@ -1,0 +1,17 @@
+# lints are reformats from Tom on april 1 2025
+71c5b4fbeef0fea7ad62ddc4dfa5f09f68f3af3b
+# accidental reformats of components/chat/Chat.client.tsx on Mar 31
+a8f8c868d60598d842dd26e584f6e234ef4b40d9
+ecb7483a8b50b6dc25ac844e61b6f927b21e5324
+
+# experimentally adding this here, small change to Chat.client.tsx plus reformat
+a2baac6e4342934efe91b7d785eca268823562f6
+
+# fixing prev commit that wasn't aut-formatted
+e0fe050d578fe7177d7b3a3047941492df6e3990
+
+# fixing lint
+66eaf4e2a1183311584816f012f1cf4d686e1235
+
+# reformat, after this we're enforcing formatting in CI
+4a47229e6f7036a7d1c90425e64124a30716d340

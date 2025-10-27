@@ -1,0 +1,41 @@
+@import 'variables.css';
+@import 'z-index.css';
+@import 'animations.css';
+@import 'fonts.css';
+@import 'components/terminal.css';
+@import 'components/resize-handle.css';
+@import 'components/code.css';
+@import 'components/editor.css';
+@tailwind utilities;
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+/* Temporary fix to make scrollbars look right in the production build */
+* {
+  scrollbar-width: thin !important;
+}
+
+html.light {
+  color-scheme: light;
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
+@layer utilities {
+  .bolt-ease-cubic-bezier {
+    @apply ease-[cubic-bezier(0.4,0,0.2,1)];
+  }
+}
+
+@layer utilities {
+  /* Alias for .bottom-4 to avoid false positives with easylist_cookie */
+  .bottom-four {
+    @apply bottom-4;
+  }
+}

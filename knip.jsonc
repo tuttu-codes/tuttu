@@ -1,0 +1,41 @@
+{
+  "entry": [
+    "{index,cli,main}.{js,cjs,mjs,jsx,ts,cts,mts,tsx}",
+    "src/{index,cli,main}.{js,cjs,mjs,jsx,ts,cts,mts,tsx}",
+    "convex/auth.config.ts",
+    "convex/crons.ts",
+    "convex/http.ts",
+    // generated code containing possibly-unused exports
+    "convex/_generated/**",
+    "functions/**",
+    "convex/eslint.config.mjs",
+    "convex/vitest.config.mts",
+    // for occasional debugging
+    "app/lib/hooks/useWhatChanged.ts",
+    "load-context.ts",
+    "parse-compressed-messages.mjs",
+    // manual build processes
+    "proxy/build.cjs",
+    "proxy/proxy.cjs",
+    "iframe-worker/build.cjs",
+    "iframe-worker/worker.mts",
+    "iframe-worker/worker.bundled.mjs",
+  ],
+  "project": ["**/*.{js,cjs,mjs,jsx,ts,cts,mts,tsx}!"],
+  "ignore": ["template/**"],
+
+  "ignoreDependencies": [
+    "@ui/*", // doesn't seem to follow the TypeScript paths (or doesn't understand which dep)
+
+    // these are all used by @convex-dev/design-system/Combobox (also see vite.config.ts)
+    "classnames",
+    "react-fast-compare",
+    "warning",
+    "fuzzy",
+
+    // these get shimmed in in vite.config.ts
+    // not sure we actually need these or not, TODO
+    "buffer",
+    "events",
+  ],
+}
