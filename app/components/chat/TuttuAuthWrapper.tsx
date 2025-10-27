@@ -11,7 +11,7 @@ import { useLocalStorage } from '@uidotdev/usehooks';
 import { api } from '@convex/_generated/api';
 import { toast } from 'sonner';
 import { fetchOptIns } from '~/lib/convexOptins';
-import { setTuttuDebugProperty } from 'tuttu-agent/utils/chefDebug';
+import { setTuttuDebugProperty } from 'tuttu-agent/utils/tuttuDebug';
 import { useAuth } from '@workos-inc/authkit-react';
 type TuttuAuthState =
   | {
